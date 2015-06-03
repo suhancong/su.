@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>H5course</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.wrap {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			margin: 200px auto;
+			-webkit-transform-style:preserve-3d;
+			-webkit-animation: rotate-wrap 6s linear infinite alternate; 
+		}
+		.wrap div {
+			position: absolute;
+			left:0;
+			top:0;
+			width: 100px;
+			height: 100px;
+			font-size: 50px;
+			line-height: 50px;
+			color: red;
+		}
+		.wrap div:nth-child(1) {
+			background: green;
+			-webkit-transform: rotateY(45deg)translateZ(120px);
+		}
+		.wrap div:nth-child(2) {
+			background: #eca;
+			-webkit-transform: rotateY(90deg) translateZ(120px);
+		}
+		.wrap div:nth-child(3) {
+			background: #ecc;
+			-webkit-transform: rotateY(135deg) translateZ(120px);
+		}
+		.wrap div:nth-child(4) {
+			background: #ecc;
+			-webkit-transform: rotateY(180deg) translateZ(120px);
+		}
+		.wrap div:nth-child(5) {
+			background: #edf;
+			-webkit-transform: rotateY(225deg) translateZ(120px);
+		}
+		.wrap div:nth-child(6) {
+			background: #eda;
+			-webkit-transform: rotateY(270deg) translateZ(120px);
+		}
+		.wrap div:nth-child(7) {
+			background: #efc;
+			-webkit-transform: rotateY(315deg) translateZ(120px);
+		}
+		.wrap div:nth-child(8) {
+			background: #eab;
+			-webkit-transform: rotateY(360deg) translateZ(120px);
+		}
+
+		@-webkit-keyframes  rotate-wrap {
+		       0%{
+			    -webkit-transform: rotateX(0deg) rotateY(90deg);
+		         }
+		      80%{
+			     -webkit-transform: rotateX(60deg) rotateY(120deg);
+		         }
+		    100%{
+			-webkit-transform: rotateX(80deg) rotateY(180deg);
+		  }
+	   }
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div>01</div>
+		<div>02</div>
+		<div>03</div>
+		<div>04</div>
+		<div>05</div>
+		<div>06</div>
+		<div>07</div>
+		<div>08</div>
+	</div>
+</body>
+</html>

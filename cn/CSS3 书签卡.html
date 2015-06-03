@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>H5course</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<script src="../jquery-1.11.2.js" charset="utf-8" type="text/javascript"></script>
+	<style>
+	body {
+		-webkit-perspective: 1000;
+	}
+	.wrap {
+		position: relative;
+		width: 800px;
+		height: 400px;
+		margin:100px auto;
+		-webkit-transform-style: preserve-3d;
+	}
+	.wrap img {
+		float:left;
+		width: 130px;
+		height: 300px;
+		-webkit-transition: all 1s linear;
+	}
+ 	.wrap img:nth-child(1) {
+	    position: absolute;
+	    left:0;
+	    top: 0;
+	    -webkit-transform: rotate(-20deg);
+    } 
+     .wrap img:nth-child(2) {
+	    position: absolute;
+	    left:100px;
+	    top: 0;
+	     z-index: 1;
+	    -webkit-transform: rotate(-10deg);
+    } 
+     .wrap img:nth-child(3) {
+	     position: absolute;
+	     z-index: 2;
+	     left:180px;
+	     top: 0;
+
+    } 
+     .wrap img:nth-child(4) {
+	     position: absolute;
+	     left:260px;
+	     top: 0;
+	      z-index: 1;
+	     -webkit-transform: rotate(10deg);
+       } 
+     .wrap img:nth-child(5) {
+	     position: absolute;
+	     left:340px;
+	     top: 0;
+	     -webkit-transform: rotate(20deg);
+    } 
+      .wrap img:nth-child(1):hover {
+      	  z-index: 3;
+ 		 -webkit-transform:  rotate(-20deg) scale(1.2) ;
+ }
+ .wrap img:nth-child(2):hover {
+ 		 z-index: 3;
+ 		 -webkit-transform:  rotate(-10deg)  scale(1.2);
+ }
+ .wrap img:nth-child(3):hover {
+  	     z-index: 4;
+ 		 -webkit-transform:  scale(1.2);
+ }
+    .wrap img:nth-child(4):hover {
+    	  z-index: 3;
+ 		 -webkit-transform:  rotate(10deg)  scale(1.2);
+ }
+    .wrap img:nth-child(5):hover {
+ 		 -webkit-transform:  rotate(20deg)  scale(1.2);
+ 		  z-index: 3;
+ }  
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<img src="../images/demoimg/girls.png" alt="" title="">
+		<img src="../images/demoimg/mimi.png" alt="" title="">
+		<img src="../images/demoimg/mudog.png" alt="" title="">
+		<img src="../images/demoimg/shamegirl.png" alt="" title="">
+		<img src="../images/demoimg/girl.png" alt="" title="">
+	</div>
+	<script>
+		// $('.wrap img').eq(0).hover(function(){
+		// 	$(this).css({
+		// 		z-index
+		// 	}).siblings().css({
+		// 		transform: "translateZ(0px)"
+		// 	})
+		// })
+	</script>
+</body>
+</html>

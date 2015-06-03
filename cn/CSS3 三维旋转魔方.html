@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>H5course</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.wrap {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			margin: 50px auto;
+			-webkit-transform-style: preserve-3d;
+			-webkit-transform: rotate(30deg,60deg) ;
+		 	-webkit-animation: rotate-wrap 2s linear infinite alternate; 
+		}
+		.wrap div {
+			position: absolute;
+			left:0;
+			top:0;
+			width: 200px;
+			height: 200px;
+		}
+		.wrap div:nth-child(1) {
+			background-color: yellow;
+			opacity: 0.5;
+			-webkit-transform: translateZ(100px);
+		}
+		.wrap div:nth-child(2) {
+			background-color: red;
+			opacity: 0.5;
+			-webkit-transform: translateZ(-100px);
+		}
+		.wrap div:nth-child(3) {
+			background-color: gray;
+			opacity: 0.5;
+			-webkit-transform: rotateY(90deg) translateZ(100px);
+		}
+		.wrap div:nth-child(4) {
+			background-color: green;
+			opacity: 0.5;
+			-webkit-transform: rotateY(-90deg) translateZ(100px);
+		}
+		.wrap div:nth-child(5) {
+			background-color: skyblue;
+			-webkit-transform: rotateX(-90deg) translateZ(100px);
+		}
+		.wrap div:nth-child(6) {
+			background-color: blue;
+			opacity: 0.2;
+			-webkit-transform: rotateX(90deg) translateZ(100px);
+		  }
+ 
+			@-webkit-keyframes  rotate-wrap {
+		       0%{
+			    -webkit-transform: rotateX(0deg) rotateY(90deg);
+		         }
+		      80%{
+			     -webkit-transform: rotateX(60deg) rotateY(120deg);
+		         }
+		    100%{
+			-webkit-transform: rotateX(80deg) rotateY(180deg);
+		  }
+	   } 
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div>北京</div>
+		<div>上海</div>
+		<div>广州</div>
+		<div>深圳</div>
+		<div>厦门</div>
+		<div>漳州</div>
+	</div>
+	
+</body>
+</html>
